@@ -1,6 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+
+    <style>
+    @media print {
+      * { background: transparent !important; color: black !important; text-shadow: none !important; filter:none !important; -ms-filter: none !important; }
+      a, a:visited { color: #444 !important; text-decoration: underline; }
+      a[href]:after { content: " (" attr(href) ")"; }
+      tr, img { page-break-inside: avoid; }
+      img { max-width: 100% !important; }
+      @page { margin: 0.5cm; }
+      p, h2, h3 { orphans: 3; widows: 3; }
+      h2, h3{ page-break-after: avoid; }
+    }
+
+    </style>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content=" FILL ME IN ">
@@ -11,18 +25,10 @@
     <link href="//fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
 
     <link href="css/style.css" rel="stylesheet">
-    <link href="css/print.css" rel="stylesheet">
+    <!-- <link href="css/print.css" rel="stylesheet"> -->
 
-    <script>
-      (function(w,g){w['GoogleAnalyticsObject']=g;
-      w[g]=w[g]||function(){(w[g].q=w[g].q||[]).push(arguments)};w[g].l=1*new Date();})(window,'ga');
 
-      // Optional TODO: replace with your Google Analytics profile ID.
-      ga('create', 'UA-XXXX-Y');
-      ga('send', 'pageview');
-    </script>
-    <script src="http://www.google-analytics.com/analytics.js"></script>
-    <script async src="js/perfmatters.js"></script>
+
   </head>
 
   <body>
@@ -63,6 +69,24 @@
           </li>
         </ul>
       </div>
+      <header>
+        <a href="/"<img src ="img/"></a>
+        <p>Dat Vu<br><span>Padawan</span></p>
+      </header>
+      <div class="person">
+        <strong>Dat Vu</strong><br>Contact me: redb1997@gmail.
+      </div>
+
+      <script>
+        (function(w,g){w['GoogleAnalyticsObject']=g;
+        w[g]=w[g]||function(){(w[g].q=w[g].q||[]).push(arguments)};w[g].l=1*new Date();})(window,'ga');
+
+        // Optional TODO: replace with your Google Analytics profile ID.
+        ga('create', 'UA-XXXX-Y');
+        ga('send', 'pageview');
+      </script>
+      <script async src="http://www.google-analytics.com/analytics.js"></script>
+      <script async src="js/perfmatters.js"></script>
 
       <footer>
         <p>&copy; Web Performance 2014 <span id="crp-stats"></span></p>
